@@ -2,9 +2,9 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import AboutPage from "./pages/AboutPage"
-import ContactPage from "./pages/ContactPage"
-import HomePage from "./pages/HomePage"
+import AboutPage from "./pages/about-page/AboutPage"
+import ContactPage from "./pages/contact-page/ContactPage"
+import HomePage from "./pages/home-page/HomePage"
 import Pokemonify from "./pages/project-pages/Pokemonify"
 import Portfolio from "./pages/project-pages/Portfolio"
 

@@ -1,4 +1,4 @@
-import NavBar from "../components/NavBar"
+import NavBar from "../../components/NavBar"
 
 function HomePage() {
     return (
@@ -9,9 +9,11 @@ function HomePage() {
                     hi, i’m joshua silva! i’m a first-year computer science graduate student at 
                     stevens institute of technology with an interest in full stack development.       
                 </p>
-            </div>
-            <div>
-                
+                <div className="projectsSection">
+                    <p>
+                        projects
+                    </p>
+                </div>
             </div>
         </div>
     );
