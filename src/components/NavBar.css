@@ -1,0 +1,17 @@
+.nav-bar-item {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar-right-item {
+    margin-right: 2rem;
+}
+
+.nav-bar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid black;
+}
+
