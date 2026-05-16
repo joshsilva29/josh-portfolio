@@ -1,17 +1,33 @@
 .nav-bar-item {
     color: black;
+    font-family: 'Sawarabi-Mincho';
     text-decoration: none;
 }
 
 .nav-bar-right-item {
-    margin-right: 2rem;
+    margin-right: 2.5rem;
 }
 
 .nav-bar {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    background: #DFF2FF;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid black;
+    padding-bottom: 1.6rem;
+    border-bottom: 1.4px solid black;
+}
+
+@media screen and (max-width: 500px) {
+    .nav-bar-right-item {
+        margin-right: 1.3rem;
+    }
+
+    .nav-bar {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        border-bottom: 1.4px solid black;
+    }
 }
 

@@ -1,5 +1,37 @@
+@font-face {
+  font-family: 'Sawarabi-Mincho';
+  src: url('./assets/fonts/SawarabiMincho-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Schibsted-Grotesk';
+  src: url('./assets/fonts/SchibstedGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+:root {
+    font-family: 'Schibsted-Grotesk', sans-serif;
+    font-size: 1.9rem;
+}
+
 body {
     margin: 0;
+    background: #DFF2FF;
+}
+
+p {
+    margin: 0;
+    width: 73%;
+}
+
+.container {
+    padding-left: 2.45rem;
+    padding-top: 2.3rem;
 }
 
 .flex-row {
@@ -13,5 +45,21 @@ body {
 
 .space-between {
     justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        font-size: 1.5rem;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    .container {
+        padding-left: 1.15rem;
+        padding-right: 1.18rem;
+        padding-top: 1.5rem;
+    }
 }
 
