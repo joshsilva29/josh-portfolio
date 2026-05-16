@@ -29,14 +29,27 @@ p {
     width: 73%;
 }
 
+.align-between {
+    align-content: space-between;
+}
+
 .container {
     padding-left: 2.45rem;
     padding-top: 2.3rem;
+    padding-bottom: 3rem;
 }
 
 .flex-row {
     display: flex;
     flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.sawarabi {
+    font-family: 'Sawarabi-Mincho', serif;
 }
 
 .space-around {
@@ -60,6 +73,7 @@ p {
         padding-left: 1.15rem;
         padding-right: 1.18rem;
         padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 }
 

@@ -1,7 +1,11 @@
+import NavBar from "../../components/nav-bar/NavBar";
 
 function Pokemonify() {
     return (
-        <div>Pokemonify</div>
+        <div> 
+            <NavBar />
+            <div>POKEMONIFY PAGE</div>
+        </div>
     );
 }
 

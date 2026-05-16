@@ -1,0 +1,23 @@
+#project-container {
+    width: 16rem;
+    margin-top: 0.5rem;
+}
+
+.project-photo {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 1.3px solid black;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-name {
+    font-size: 0.75rem;
+}
+
+.project-text {
+    font-size: 0.75rem;
+    color: #454545;
+}
