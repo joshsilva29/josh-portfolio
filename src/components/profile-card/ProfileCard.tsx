@@ -4,6 +4,7 @@ import { useState } from "react";
 function ProfileCard() {
     const [loaded, setLoaded] = useState(false);
     let imgPath = import.meta.env.BASE_URL + "images/profile-pic.jpg";
+    console.log(imgPath);
 
     return (
         <div className="flex-row flex-wrap-reverse" id="profile-card">

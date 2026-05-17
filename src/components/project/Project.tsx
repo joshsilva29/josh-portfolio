@@ -12,6 +12,9 @@ type ProjectProps = {
 function Project({name, src, desc, page}: ProjectProps) {
     const [loaded, setLoaded] = useState(false);
     let navigate = useNavigate();
+    let link = import.meta.env.BASE_URL + `images/${src}`
+    console.log(link);
+
     return (
         <div id="project-container" onClick={() => navigate(`/${page}`)}>
             <div className='project-name'>{name}</div>
@@ -21,7 +24,7 @@ function Project({name, src, desc, page}: ProjectProps) {
                 )
             }
             <img
-                src={`${import.meta.env.BASE_URL}images/${src}`}
+                src={link}
                 className={`project-photo fade-in ${loaded ? 'loaded': ''}`}
                 alt={name}
                 onLoad={() => setLoaded(true)}
