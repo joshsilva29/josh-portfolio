@@ -9,7 +9,7 @@ function Pokemonify() {
     let name = "pokémonify";
     let tools = ["react", "node", "aws", "typescript"];
     let link = "https://mnfy.me";
-    let imgPath = "../../../../images/";
+    let imgPath = import.meta.env.BASE_URL + "images/";
     let img1 = `${imgPath}pokemonify-mobile-1.jpg`;
     let img2 = `${imgPath}pokemonify-mobile-2.jpg`;
     return (

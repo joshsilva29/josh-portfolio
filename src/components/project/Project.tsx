@@ -21,7 +21,7 @@ function Project({name, src, desc, page}: ProjectProps) {
                 )
             }
             <img
-                src={`../../../images/${src}`}
+                src={`${import.meta.env.BASE_URL}images/${src}`}
                 className={`project-photo fade-in ${loaded ? 'loaded': ''}`}
                 alt={name}
                 onLoad={() => setLoaded(true)}
