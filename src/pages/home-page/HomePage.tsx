@@ -19,7 +19,7 @@ function HomePage() {
                     </p>
                     <div className="projects-cards flex-row flex-wrap">
                         {projectList.map(({ name, src, desc, page }) => (
-                            <Project name={name} src={src} desc={desc} page={page}/>
+                            <Project name={name} src={src} desc={desc} page={page} key={name}/>
                         ))}
                     </div>
                 </div>

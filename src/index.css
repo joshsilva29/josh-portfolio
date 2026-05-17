@@ -43,7 +43,7 @@ p {
 .container {
     padding-left: 2.45rem;
     padding-top: 2.3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
 }
 
 .flex-row {
@@ -110,7 +110,7 @@ p {
         padding-left: 1.15rem;
         padding-right: 1.18rem;
         padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 2.5rem;
     }
 }
 

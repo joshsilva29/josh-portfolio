@@ -8,29 +8,37 @@ import HomePage from "./pages/home-page/HomePage"
 import Pokemonify from "./pages/project-pages/pokemonify/Pokemonify"
 import Portfolio from "./pages/project-pages/portfolio/Portfolio"
 
+let isLocal = true;
+
+let home = isLocal ? '/' : import.meta.env.BASE_URL;
+let contact = isLocal ? '/contact' : import.meta.env.BASE_URL + '/contact';
+let about = isLocal ? '/about' : import.meta.env.BASE_URL + '/about';
+let mnfy = isLocal ? '/mnfy' : import.meta.env.BASE_URL + '/mnfy';
+let portfolio = isLocal ? '/portfolio' : import.meta.env.BASE_URL + '/portfolio';
+
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: home,
     element: <HomePage />,
     errorElement: <HomePage />
   },
   {
-    path: '/contact',
+    path: contact,
     element: <ContactPage />,
     errorElement: <HomePage />
   },
   {
-    path: '/about',
+    path: about,
     element: <AboutPage />,
     errorElement: <AboutPage />
   },
   {
-    path: '/mnfy',
+    path: mnfy,
     element: <Pokemonify />,
     errorElement: <Pokemonify />
   },
   {
-    path: '/portfolio',
+    path: portfolio,
     element: <Portfolio />,
     errorElement: <Portfolio />
   }

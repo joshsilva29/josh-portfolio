@@ -4,15 +4,16 @@ import { useState } from "react";
 import "./pokemonify.css";
 
 function Pokemonify() {
+    let isLocal = false;
+
     const [loaded, setLoaded] = useState(false);
     const [loaded1, setLoaded1] = useState(false);
     let name = "pokémonify";
     let tools = ["react", "node", "aws", "typescript"];
     let link = "https://mnfy.me";
-    let imgPath = import.meta.env.BASE_URL + "images/";
+    let imgPath = isLocal ? "../../../../images/" :import.meta.env.BASE_URL + "images/";
     let img1 = `${imgPath}pokemonify-mobile-1.jpg`;
     let img2 = `${imgPath}pokemonify-mobile-2.jpg`;
-    console.log(imgPath)
     return (
         <div> 
             <NavBar />

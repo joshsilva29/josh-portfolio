@@ -2,9 +2,10 @@ import "./profilecard.css"
 import { useState } from "react";
 
 function ProfileCard() {
+    let isLocal = false;
+
     const [loaded, setLoaded] = useState(false);
-    let imgPath = import.meta.env.BASE_URL + "images/profile-pic.jpg";
-    console.log(imgPath);
+    let imgPath = isLocal ? "../../../images/profile-pic.jpg" : import.meta.env.BASE_URL + "images/profile-pic.jpg";
 
     return (
         <div className="flex-row flex-wrap-reverse" id="profile-card">

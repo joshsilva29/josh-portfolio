@@ -8,7 +8,7 @@
         },
         {
             "name": "portfolio website", 
-            "src": "castelia-city.jpeg",
+            "src": "portfolio-pic.jpg",
             "desc": "react site hosted on github pages. designed in figma.",
             "page": "portfolio"
         }

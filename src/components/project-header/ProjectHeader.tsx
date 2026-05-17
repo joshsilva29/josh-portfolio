@@ -7,7 +7,6 @@ type ProjectHeaderProps = {
 }
 
 function ProjectHeader({ name, tools, link }: ProjectHeaderProps) {
-    console.log(name, tools, link);
     return (
         <div className="project-header">
             <div id="project-title">{name}</div>
