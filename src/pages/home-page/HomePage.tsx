@@ -5,7 +5,6 @@ import "./homepage.css";
 
 function HomePage() {
     let projectList = projectData.projects
-    // let { name, src, desc, page } = projectList[0];
     return (
         <div>
             <NavBar />
@@ -18,7 +17,7 @@ function HomePage() {
                     <p className="sawarabi">
                         projects
                     </p>
-                    <div className="projects-cards flex-row flex-wrap space-between align-between">
+                    <div className="projects-cards flex-row flex-wrap">
                         {projectList.map(({ name, src, desc, page }) => (
                             <Project name={name} src={src} desc={desc} page={page}/>
                         ))}

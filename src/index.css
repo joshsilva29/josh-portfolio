@@ -17,6 +17,9 @@
 :root {
     font-family: 'Schibsted-Grotesk', sans-serif;
     font-size: 1.9rem;
+    scrollbar-gutter: stable;
+    overflow-y: scroll;
+    min-height: 101vh; /* to always have a scroll bar #LOL */
 }
 
 body {
@@ -27,10 +30,6 @@ body {
 p {
     margin: 0;
     width: 73%;
-}
-
-.align-between {
-    align-content: space-between;
 }
 
 .container {
@@ -46,6 +45,7 @@ p {
 
 .flex-wrap {
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .sawarabi {
