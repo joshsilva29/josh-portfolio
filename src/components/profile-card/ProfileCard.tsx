@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function ProfileCard() {
     const [loaded, setLoaded] = useState(false);
-    let imgPath = "../../../images/profile-pic.jpg";
+    let imgPath = import.meta.env.BASE_URL + "images/profile-pic.jpg";
 
     return (
         <div className="flex-row flex-wrap-reverse" id="profile-card">
