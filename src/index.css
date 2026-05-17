@@ -27,9 +27,17 @@ body {
     background: #DFF2FF;
 }
 
+a {
+    color: black;
+}
+
 p {
     margin: 0;
     width: 73%;
+}
+
+.bold {
+    font-weight: 500;
 }
 
 .container {
