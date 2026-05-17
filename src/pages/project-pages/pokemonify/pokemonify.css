@@ -1,3 +1,10 @@
+.loading {
+    background: transparent;
+    height: 13rem;
+    width: 8.739rem;  
+    border: 1.3px solid black;
+}
+
 .phone-screenshot {
     height: 13rem;
     object-fit: cover;
@@ -6,6 +13,10 @@
 }
 
 @media screen and (min-width: 850px) {
+    .loading {
+        height: 19rem;
+    }
+
     .phone-screenshot {
         height: 19rem;
     }

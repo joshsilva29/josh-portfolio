@@ -1,7 +1,10 @@
 import "./profilecard.css"
+import { useState } from "react";
 
 function ProfileCard() {
+    const [loaded, setLoaded] = useState(false);
     let imgPath = "../../../images/profile-pic.jpg";
+
     return (
         <div className="flex-row flex-wrap-reverse" id="profile-card">
             <div>
@@ -17,9 +20,23 @@ function ProfileCard() {
                     </div>
                 </div>
             </div>
-            <img src={imgPath} alt="picture of josh" id="profile-pic"/>
+            {
+                !loaded && (
+                    <div className="loading-profile"/>
+                )
+            }
+            <img
+                src={imgPath}
+                alt="picture of josh"
+                id="profile-pic"
+                className={`fade-in ${loaded ? 'loaded': ''}`}
+                onLoad={() => setLoaded(true)}
+                style={{ display: loaded ? 'block' : 'none' }}
+            />
         </div>
     )
 }
+
+
 
 export default ProfileCard;

@@ -1,5 +1,6 @@
 import "./project.css";
 import { useNavigate } from "react-router"
+import { useState } from "react";
 
 type ProjectProps = {
     name: string;
@@ -9,12 +10,23 @@ type ProjectProps = {
 }
 
 function Project({name, src, desc, page}: ProjectProps) {
-    console.log(name, src, desc, page)
+    const [loaded, setLoaded] = useState(false);
     let navigate = useNavigate();
     return (
         <div id="project-container" onClick={() => navigate(`/${page}`)}>
             <div className='project-name'>{name}</div>
-            <img src={`../../../images/${src}`} className="project-photo"/>
+            {
+                !loaded && (
+                    <div className="loading-project"/>
+                )
+            }
+            <img
+                src={`../../../images/${src}`}
+                className={`project-photo fade-in ${loaded ? 'loaded': ''}`}
+                alt={name}
+                onLoad={() => setLoaded(true)}
+                style={{ display: loaded ? 'block' : 'none' }}
+            />
             <div className="project-text">{desc}</div>
         </div>
     )

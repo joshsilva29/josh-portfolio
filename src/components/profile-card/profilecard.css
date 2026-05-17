@@ -9,6 +9,13 @@
     margin-bottom: 0.4rem;
 }
 
+.loading-profile {
+    background: transparent;
+    height: 10rem;
+    width: 10rem;
+    border: 1.3px solid black;
+}
+
 #profile-card {
     margin-bottom: 2rem;
 }

@@ -1,8 +1,11 @@
 import NavBar from "../../../components/nav-bar/NavBar";
 import ProjectHeader from "../../../components/project-header/ProjectHeader";
+import { useState } from "react";
 import "./pokemonify.css";
 
 function Pokemonify() {
+    const [loaded, setLoaded] = useState(false);
+    const [loaded1, setLoaded1] = useState(false);
     let name = "pokémonify";
     let tools = ["react", "node", "aws", "typescript"];
     let link = "https://mnfy.me";
@@ -19,8 +22,30 @@ function Pokemonify() {
                 </p>
                 <br></br>
                 <div className="flex-row flex-wrap">
-                    <img src={img1} className="phone-screenshot"/>
-                    <img src={img2} className="phone-screenshot"/>
+                    {
+                        !loaded && (
+                            <div className="loading"/>
+                        )
+                    }
+                    <img
+                        src={img1}
+                        className={`phone-screenshot fade-in ${loaded ? 'loaded': ''}`}
+                        alt="pokemonify-mobile-1.jpg"
+                        onLoad={() => setLoaded(true)}
+                        style={{ display: loaded ? 'block' : 'none' }}
+                    />
+                    {
+                        !loaded1 && (
+                            <div className="loading"/>
+                        )
+                    }
+                    <img
+                        src={img2}
+                        className={`phone-screenshot fade-in ${loaded ? 'loaded': ''}`}
+                        alt="pokemonify-mobile-2.jpg"
+                        onLoad={() => setLoaded1(true)}
+                        style={{ display: loaded1 ? 'block' : 'none' }}
+                    />                   
                 </div>
                 <br></br>
                 <p>
