@@ -15,9 +15,10 @@ function Project({name, src, desc, page}: ProjectProps) {
     const [loaded, setLoaded] = useState(false);
     let navigate = useNavigate();
     let imgPath = isLocal ? `../../../images/${src}` : import.meta.env.BASE_URL + `images/${src}`
+    let srcPath = isLocal ? `/${page}` : import.meta.env.BASE_URL + page
 
     return (
-        <div id="project-container" onClick={() => navigate(`/${page}`)}>
+        <div id="project-container" onClick={() => navigate(srcPath)}>
             <div className='project-name'>{name}</div>
             {
                 !loaded && (
