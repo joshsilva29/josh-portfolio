@@ -1,0 +1,25 @@
+#about-info {
+    color: #454545;
+    font-size: 0.8rem;
+    
+}
+
+#about-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
+}
+
+#profile-card {
+    margin-bottom: 2rem;
+}
+
+#profile-pic {
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+    border: 1.3px solid black;
+}
+
+#top-about-info {
+    margin-bottom: 0.4rem;
+}

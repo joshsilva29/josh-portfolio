@@ -7,15 +7,9 @@
             "page": "mnfy"
         },
         {
-            "name": "this portfolio website :)", 
+            "name": "portfolio website", 
             "src": "castelia-city.jpeg",
             "desc": "react site hosted on github pages. designed in figma.",
-            "page": "portfolio"
-        },
-        {
-            "name": "everything boots", 
-            "src": "castelia-city.jpeg",
-            "desc": "what????",
             "page": "portfolio"
         }
     ]

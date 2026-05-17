@@ -5,8 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import AboutPage from "./pages/about-page/AboutPage"
 import ContactPage from "./pages/contact-page/ContactPage"
 import HomePage from "./pages/home-page/HomePage"
-import Pokemonify from "./pages/project-pages/Pokemonify"
-import Portfolio from "./pages/project-pages/Portfolio"
+import Pokemonify from "./pages/project-pages/pokemonify/Pokemonify"
+import Portfolio from "./pages/project-pages/portfolio/Portfolio"
 
 const router = createBrowserRouter([
   {

@@ -1,0 +1,17 @@
+.project-header {
+    margin-bottom: 1.5rem;
+}
+
+#project-title {
+    font-size: 1.6rem;
+    margin-bottom: 0.1rem;
+}
+
+#project-info {
+    font-size: 0.8rem;
+    color: #454545;
+}
+
+a {
+    color: #454545;
+}

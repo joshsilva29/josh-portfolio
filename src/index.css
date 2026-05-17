@@ -51,9 +51,19 @@ p {
     flex-direction: row;
 }
 
+.flex-col {
+    display: flex;
+    flex-direction: col; 
+}
+
 .flex-wrap {
     flex-wrap: wrap;
     gap: 1.5rem;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
 }
 
 .sawarabi {
@@ -66,6 +76,14 @@ p {
 
 .space-between {
     justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.align-center {
+    align-items: center;
 }
 
 @media screen and (max-width: 500px) {

@@ -1,0 +1,12 @@
+.phone-screenshot {
+    height: 13rem;
+    object-fit: cover;
+    object-position: center;
+    border: 1.3px solid black;
+}
+
+@media screen and (min-width: 850px) {
+    .phone-screenshot {
+        height: 19rem;
+    }
+}
