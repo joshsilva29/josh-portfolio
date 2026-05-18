@@ -8,7 +8,7 @@ import HomePage from "./pages/home-page/HomePage"
 import Pokemonify from "./pages/project-pages/pokemonify/Pokemonify"
 import Portfolio from "./pages/project-pages/portfolio/Portfolio"
 
-let isLocal = false;
+let isLocal = true;
 
 let home = isLocal ? '/' : import.meta.env.BASE_URL;
 let contact = isLocal ? '/contact' : import.meta.env.BASE_URL + 'contact';

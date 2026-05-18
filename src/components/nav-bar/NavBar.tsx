@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./NavBar.css"
 
 function NavBar() {
-    let isLocal = false;
+    let isLocal = true;
     let home = isLocal ? '/' : import.meta.env.BASE_URL;
     let contact = isLocal ? '/contact' : import.meta.env.BASE_URL + 'contact';
     let about = isLocal ? '/about' : import.meta.env.BASE_URL + 'about';

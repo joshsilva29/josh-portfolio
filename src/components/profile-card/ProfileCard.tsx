@@ -2,7 +2,7 @@ import "./profilecard.css"
 import { useState } from "react";
 
 function ProfileCard() {
-    let isLocal = false;
+    let isLocal = true;
 
     const [loaded, setLoaded] = useState(false);
     let imgPath = isLocal ? "../../../images/profile-pic.jpg" : import.meta.env.BASE_URL + "images/profile-pic.jpg";

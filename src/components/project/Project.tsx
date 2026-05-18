@@ -10,7 +10,7 @@ type ProjectProps = {
 }
 
 function Project({name, src, desc, page}: ProjectProps) {
-    let isLocal = false;
+    let isLocal = true;
 
     const [loaded, setLoaded] = useState(false);
     let navigate = useNavigate();

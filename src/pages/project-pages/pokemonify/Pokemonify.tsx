@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./pokemonify.css";
 
 function Pokemonify() {
-    let isLocal = false;
+    let isLocal = true;
 
     const [loaded, setLoaded] = useState(false);
     const [loaded1, setLoaded1] = useState(false);
